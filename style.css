@@ -4,10 +4,28 @@ body {
   background-color: #f1f1f1;
 }
 
+/*create flexbox to hold puzzle pcs*/
 .container {
-  display: block;
+  display: flex;
   width: 600px;
   height: 600px;
-  background-color: black
+  background-color: black;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
 }
 
+.puzzle {
+  /*position: absolute;*/
+  background-image: url('puzzle.jpg');
+  width: 200px;
+  height: 200px;
+}
+
+/*#pone {
+  background-position: 0 0;
+}
+
+#ptwo {
+  background-position: -200 -200;
+}*/
