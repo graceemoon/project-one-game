@@ -18,8 +18,9 @@ body {
 .puzzle {
   /*position: absolute;*/
   background-image: url('puzzle.jpg');
+  background-size: initial;
+  height:200px;
   width: 200px;
-  height: 200px;
 }
 
 /*#pone {
