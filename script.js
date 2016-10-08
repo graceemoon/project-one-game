@@ -5,46 +5,104 @@
 //jquery
 $( document ).ready(function() {
     console.log( "this is working. YES!!" );
-});
+
+//mad creds to Scott
 
 //why?
 //blank grid to store coordinates per puzzle pc
 //that will be created by below nested for loop
-// should be grid[[1,2,3,4,5,6,7,8,9,10]
-//[1,2,3,4,5,6,8,9,10][1,2,3,4,5,6,7,8,9,10]]
 
 var grid = [];
 
 //creating x & y coordinates on the grid for each puzzle pc
+//create div for ea. pc. w/ class 'puzzle'
+// & use counter for id's per pc. e.g. puzzle1, puzzle2
 // make 60px/pc for 10x10 600px puzzle
+//attach divs to container
 
-for (var i = 0; i < 10; i++) {
-  grid[i] = []
-  //new $('<div class"row">')
-  var newRow = $('<div class="row"></div>');
-  for (var j = 0; j <  10; j++) {
-    var block = $('<div class="puzzle">')
-    var counter = 0;
-    block.attr('id', 'piece'+counter)
-    .css({'background-position' : i*60 + 'px ' + j*60 + 'px'})
-    newRow.append(block)
-  }
-  board.append(newRow)
-}
+//container = flexbox
 
+//need to reorganize puzzles to be in order
+//attach coordinates to each pc?
 
+var createBoard = function() {
+  var counter = 0;
+  var pieces = [];
+  var randomPieces = [];
 
-// $('.container').append(.innerHTML?)('<div>pc1</div>');
-//for 3 x 3 ---- this works
-for (var i = 0; i < 3; i++) {
-  grid[i] = [];
-  for (var j = 0; j <3; j++) {
-    grid[i][j] = {
-      x: i*200,
-      y: j*200,
+  for (var i = 0; i < 5; i++) {
+    grid[i] = []
+    //new $('<div class"row">')
+    // var newRow = $('<div class="row"></div>');
+    for (var j = 0; j < 5; j++) {
+      var block = $('<div class="puzzle"></div>');
+      block.attr('id', 'piece' + counter)
+      .css({'background-position': (i * -120) +'px ' + (j * -120) +'px'});
+      pieces.push(block);
+      counter++;
     }
   }
+
+  // for (var i = 0; i < pieces.length; i++) {
+
+  while (pieces.length) {
+    var randomIndex = Math.floor(Math.random()*pieces.length);
+    var piece = pieces.splice(randomIndex, 1); // ['hi']
+    randomPieces.push(piece[0]);
+    // console.log(pieces.length)
+  }
+
+  for (var i = 0; i < randomPieces.length; i++) {
+    $('.container').append(randomPieces[i]);
+  }
+
+
+
+
+    // console.log(randomPieces);
+
+
+  // }
+
+
+  // // reorder
+  // var randomize = $(function () {
+  //     while (pieces.length) {
+  //       $contain.append($pieces.splice(Math.floor(Math.random() * $pieces.length), 1)[0]);
+  // }
+
+
+
+  // append to container
+      //$('.container').append(block);
+
+
+  // console.log(pieces);
+
+
 }
+createBoard();
+
+
+
+
+//this works - but why???
+// $(function () {
+//   var $contain = $('.container');
+//   var $pieces = $('.puzzle');
+//     while ($pieces.length) {
+//         $contain.append($pieces.splice(Math.floor(Math.random() * $pieces.length), 1)[0]);
+//     }
+// });
+
+
+
+
+
+
+
+//click puzzle pc to switch with another pc
+//pc will stay in place if correct spot
 
 
 
@@ -61,26 +119,12 @@ for (var i = 0; i < 3; i++) {
 //     }
 // }
 
-
-
-
-
-//need to make grid break up image
-//randomize puzzles
-//var scramble = [];
-
-
-
-
-
-//puzzle pcs are inside flexbox
-
 //let user know when they win
 
 
 
 
-
+});
 
 
 

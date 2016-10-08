@@ -7,20 +7,21 @@ body {
 /*create flexbox to hold puzzle pcs*/
 .container {
   display: flex;
-  width: 600px;
-  height: 600px;
+  width: 610px;
+  height: 610px;
   background-color: black;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
-
+  margin: 50px 100px;
 }
 
 .puzzle {
   /*position: absolute;*/
   background-image: url('puzzle.jpg');
-  background-size: initial;
-  height:200px;
-  width: 200px;
+/*  background-size: initial;*/
+  height: 120px;
+  width: 120px;
+  border: 1px black solid;
 }
 
 /*#pone {
@@ -30,3 +31,9 @@ body {
 #ptwo {
   background-position: -200 -200;
 }*/
+
+/*css for form stuff*/
+.formbod {
+display: inline-block;
+background-image:
+}
