@@ -47,39 +47,18 @@ var createBoard = function() {
 
   while (pieces.length) {
     var randomIndex = Math.floor(Math.random()*pieces.length);
-    var piece = pieces.splice(randomIndex, 1); // ['hi']
+    var piece = pieces.splice(randomIndex, 1);
     randomPieces.push(piece[0]);
     // console.log(pieces.length)
   }
-
+    // append to container
   for (var i = 0; i < randomPieces.length; i++) {
     $('.container').append(randomPieces[i]);
   }
-
-
-
-
     // console.log(randomPieces);
-
-
   // }
-
-
-  // // reorder
-  // var randomize = $(function () {
-  //     while (pieces.length) {
-  //       $contain.append($pieces.splice(Math.floor(Math.random() * $pieces.length), 1)[0]);
-  // }
-
-
-
-  // append to container
-      //$('.container').append(block);
-
 
   // console.log(pieces);
-
-
 }
 createBoard();
 
@@ -101,8 +80,11 @@ createBoard();
 
 
 
-//click puzzle pc to switch with another pc
+// switch 1st click and 2nd click puzzle pcs
 //pc will stay in place if correct spot
+
+//swap position of 2 puzzles within the array... how?
+//if pc1 clicked and if pc2 clicked, switch coordinates
 
 
 
