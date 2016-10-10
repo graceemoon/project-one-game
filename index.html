@@ -4,33 +4,61 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="form.js"></script>
 </head>
 <body>
-
+<!-- try to set opacity for bg
+<div class="backimg">
+<img src="map2.png" alt="background">
+</div> -->
+<a class="logo" href = "index.html"><img src="logo.png" alt="logo" height= "100px"></a>
+<!-- FORM -->
 <div class="formbod">
+
+<div class = "signup">
+<h2>Sign up to play Pokemon Puzzle(no margin)</h2>
+<h4>Play Play Play ( this has a margin)</h4>
+</div>
+
 <form action="game.html" class="game-form" method="get">
-<p>Username:
-<input type="text" name="username"/>
+<p>
+<input class="box" type="text" name="first" placeholder="First Name" />
 </p>
 
-<p>Age:
-<input type="text" name="age"/>
+<p>
+<input class="box" type="text" name="last" placeholder="Last Name" />
 </p>
 
-<p>Gender:
+<p>
+<input class="box" type="text" name="email" placeholder="E-mail"/>
+</p>
+
+<p>
+<input class="box" type="text" name="whatever" placeholder="Whatever"/>
+</p>
+
+<!-- <p>Gender:
 <input type="radio" name="gender" value="f"/>Female
 <input type="radio" name="gender" value="m"/>Male
-</p>
+</p> -->
 
-<p>Choose a starter Pokemon:</p>
-<select name="starter">
+<select class="box" name="starter">
+<option value="">Choose your starter Pokemon</option>
 <option value="bulbasaur">Bulbasaur</option>
 <option value="charmander">Charmander</option>
 <option value="squirtle">Squirtle</option>
 </select>
+
+<select class="box" name="starter">
+<option value="">Choose your Team</option>
+<option value="valor">Valor</option>
+<option value="mystic">Mystic</option>
+<option value="instinct">Instinct</option>
+</select>
+
 <br/>
 <br/>
 <input type="submit" value="Submit!"/>

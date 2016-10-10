@@ -1,53 +1,8 @@
 body {
 /*  width: 800px;
   height: 500px;*/
-  background-image: url('map2-opacity.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #f1f1f1;
-
 }
-
-
-/*FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM*/
-
-/*background img opacity/fill page
-.backimg {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .5;
-}*/
-
-/*css for form stuff*/
-.formbod {
-display: flex;
-flex-flow: row wrap;
-width: 600px;
-}
-
-.signup {
-  display: inline-flex;
-  margin-bottom: 10px;
-}
-
-/*h2 {
-  display: block;
-}
-h4 {
-  display: block;
-  margin: 10px auto;
-}*/
-
-
-
-
-
-/*PUZZLE PUZZLE PUZZLE PUZZLE PUZZLE PUZZLE PUZZLE PUZZLE */
 
 /*create flexbox to hold puzzle pcs*/
 .container {
@@ -83,11 +38,14 @@ h4 {
   background-position: -200 -200;
 }*/
 
+/*css for form stuff*/
+.formbod {
+display: inline-block;
+background-image:
+}
 
 
-/*fake fake fake ---- working???*/
-/*div {
+div {
   font-size: 33px;
   text-align: center;
 }
-*/

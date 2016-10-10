@@ -1,11 +1,10 @@
+index1 = 0;
+puzzle1 = $('.puzzle').eq(0);
+index3 = 3;
+puzzle3 = $('.puzzle').eq(3);
 
-index0 = 0;
-puzzle0 = $('.puzzle').eq(0);
-index2 = 2;
-puzzle2 = $('.puzzle').eq(2);
-
-puzzle0.insertAfter($('.puzzle').eq(index2));
-puzzle2.insertBefore($('.puzzle').eq(index0));
+puzzle2.insertAfter($('.puzzle').eq(index1));
+puzzle1.insertBefore($('.puzzle').eq(index2));
 
 
 
