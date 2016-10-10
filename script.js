@@ -1,18 +1,4 @@
 
-index0 = 0;
-puzzle0 = $('.puzzle').eq(0);
-index2 = 2;
-puzzle2 = $('.puzzle').eq(2);
-
-puzzle0.insertAfter($('.puzzle').eq(index2));
-puzzle2.insertBefore($('.puzzle').eq(index0));
-
-
-
-
-
-
-
 // document.addEventListener('DOMContentLoaded', function() {
 //   console.log('this is after the dom loaded');
 // })
@@ -45,53 +31,39 @@ var createBoard = function() {
   var pieces = [];
   var randomPieces = [];
 
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 5; i++) {
     grid[i] = []
     //new $('<div class"row">')
     // var newRow = $('<div class="row"></div>');
-    for (var j = 0; j < 3; j++) {
+    for (var j = 0; j < 5; j++) {
       var block = $('<div class="puzzle"></div>');
       block.attr('id', 'piece' + counter)
-      .css({'background-position': (i * -200) +'px ' + (j * -200) +'px'});
-      block.text(counter);
+      .css({'background-position': (i * -120) +'px ' + (j * -120) +'px'});
+      // block.text(counter);
       pieces.push(block);
       counter++;
-        $('.container').append(block);
+      $('.container').append(block);
     }
   }
 
-  // for (var i = 0; i < pieces.length; i++) {
+  for (var i = 0; i < pieces.length; i++) {
 
-  // while (pieces.length) {
-  //   var randomIndex = Math.floor(Math.random()*pieces.length);
-  //   var piece = pieces.splice(randomIndex, 1);
-  //   randomPieces.push(piece[0]);
-  //   // console.log(pieces.length)
-  // }
-  //   // append to container
-  // for (var i = 0; i < randomPieces.length; i++) {
-  //   $('.container').append(randomPieces[i]);
-  // }
+  while (pieces.length) {
+    var randomIndex = Math.floor(Math.random()*pieces.length);
+    var piece = pieces.splice(randomIndex, 1);
+    randomPieces.push(piece[0]);
+    // console.log(pieces.length)
+  }
+    // append to container
+  for (var i = 0; i < randomPieces.length; i++) {
+    $('.container').append(randomPieces[i]);
+  }
     // console.log(randomPieces);
-  // }
+  }
 
   // console.log(pieces);
 }
 createBoard();
-
-
-
-
-//this works - but why???
-// $(function () {
-//   var $contain = $('.container');
-//   var $pieces = $('.puzzle');
-//     while ($pieces.length) {
-//         $contain.append($pieces.splice(Math.floor(Math.random() * $pieces.length), 1)[0]);
-//     }
-// });
-
-
 
 
 
@@ -113,8 +85,6 @@ createBoard();
 
 
 
-
-
 // var puzPc = $('.puzzle');
 
 // //attach each div to coordinate
@@ -130,6 +100,15 @@ createBoard();
 //let user know when they win
 
 
+
+
+// index0 = 0;
+// puzzle0 = $('.puzzle').eq(0);
+// index2 = 2;
+// puzzle2 = $('.puzzle').eq(2);
+
+// puzzle0.insertAfter($('.puzzle').eq(index2));
+// puzzle2.insertBefore($('.puzzle').eq(index0));
 
 
 });

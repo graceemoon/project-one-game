@@ -1,6 +1,6 @@
 body {
   font-family: 'PT Sans', helvetica, sans-serif;
-  background-color: #000000;
+  background-color: #f0f0f0;
   background-image: url('map2-opacity.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -9,28 +9,34 @@ body {
 }
 
 .logo img {
-  margin-top: 10px;
   margin-left: 20px;
+}
+
+.logo a:hover {
+  background-color: none;
 }
 
 .login-butt {
   display: inline-block;
   float: right;
-  margin-top: 20px;
   margin-right: 100px;
   padding: 15px;
-  border: 1px white solid;
+  border: 1px black solid;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
+  font-weight: 700;
   border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
 }
 
 /*holds form + headers*/
 .formbod {
 background-color: rgba(255,255,255,0.5);
 display: block;
-margin: 60px auto;
+margin: 30px auto;
 width: 600px;
+padding: 20px;
+border-radius: 5px;
 }
 
 /*holds h2 + h4*/
@@ -46,43 +52,91 @@ h2 {
 }
 
 h4 {
-
   margin: 10px auto;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center;
 }
 
 /*holds text and select inputs for form*/
 .game-form {
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 600px;
 }
 
 /*text input class*/
 .box {
-
+  padding: 20px;
+  width: 40%;
+  margin: 10px 0px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: none;    /*what the fffk*/
+  outline: none;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
 }
 
 /*select input class*/
 .selectBox {
-
+  display: block;
+  background-color: #FFFFFF;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  padding: 20px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
+
 
 /*submit button*/
 .submit-butt {
+  margin: 10px 0px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #1166FF;
+  border-radius: 5px;
+  background-color: #1166FF;
+  padding: 20px;
+  font-size: 16px;
+}
 
+.submit:hover {
+  color: #FFFFFF;
 }
 
 p {
+  text-align: center;
+}
 
+p a {
+  color: #1166FF;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #1166FF;
+/*  background-color: yellow;*/
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 a:hover {
-  color: #ffdd55;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 
@@ -93,10 +147,8 @@ a:hover {
 /*create flexbox to hold puzzle pcs*/
 .container {
   display: flex;
-  width: 606px;
-  height: 606px;
-/*  width: 610px;
-  height: 610px;*/
+  width: 610px;
+  height: 610px;
   /*background-color: black;*/
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -105,24 +157,14 @@ a:hover {
 
 .puzzle {
   /*position: absolute;*/
-/*  background-image: url('pikachu.jpg');
-*/  background-size: 600px 600px;
+  background-image: url('pokemon-puzzle.png');
+  background-size: 600px 600px; /*cover*/
   background-repeat: no-repeat;
 /*  background-size: initial;*/
-  height: 200px;
-  width: 200px;
-/*  height: 120px;
-  width: 120px;*/
+  height: 120px;
+  width: 120px;
   border: 1px black solid;
 }
-
-/*#pone {
-  background-position: 0 0;
-}
-
-#ptwo {
-  background-position: -200 -200;
-}*/
 
 
 
