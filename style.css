@@ -1,48 +1,89 @@
 body {
-/*  width: 800px;
-  height: 500px;*/
+  font-family: 'PT Sans', helvetica, sans-serif;
+  background-color: #000000;
   background-image: url('map2-opacity.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f1f1f1;
-
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0px;
 }
 
+.logo img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
-/*FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM*/
+.login-butt {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px;
+  padding: 15px;
+  border: 1px white solid;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+}
 
-/*background img opacity/fill page
-.backimg {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .5;
-}*/
-
-/*css for form stuff*/
+/*holds form + headers*/
 .formbod {
-display: flex;
-flex-flow: row wrap;
+background-color: rgba(255,255,255,0.5);
+display: block;
+margin: 60px auto;
 width: 600px;
 }
 
+/*holds h2 + h4*/
 .signup {
-  display: inline-flex;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-/*h2 {
-  display: block;
+h2 {
+  margin: 0px auto;
+  padding: 0px;
+  font-size: 35px;
+  text-align: center;
 }
+
 h4 {
-  display: block;
-  margin: 10px auto;
-}*/
 
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*holds text and select inputs for form*/
+.game-form {
+
+}
+
+/*text input class*/
+.box {
+
+}
+
+/*select input class*/
+.selectBox {
+
+}
+
+/*submit button*/
+.submit-butt {
+
+}
+
+p {
+
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #ffdd55;
+}
 
 
 
