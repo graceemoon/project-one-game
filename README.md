@@ -1,6 +1,8 @@
 # project-one-game
 
 ![](img/Flying_Pikachu_Dash.png)
+
+
 Pokemon Puzzle Game
 
 DIRECTIONS
@@ -10,7 +12,7 @@ DIRECTIONS
 3. Swap puzzle pieces by clicking 2 puzzle pieces
 4. If you place all the pieces to correct location, you win
 
-
+![](img/wireframe.png)
 
 ![](img/game_page.png)
 Above - game page for the Pokemon puzzle
