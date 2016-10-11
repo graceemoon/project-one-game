@@ -7,24 +7,19 @@
 $( document ).ready(function() {
     console.log( "this is working. YES!!" );
 
-//mad creds to Scott
 
-//why?
-//blank grid to store coordinates per puzzle pc
-//that will be created by below nested for loop
+
+
 
 var grid = [];
 
 //creating x & y coordinates on the grid for each puzzle pc
 //create div for ea. pc. w/ class 'puzzle'
 // & use counter for id's per pc. e.g. puzzle1, puzzle2
-// make 60px/pc for 10x10 600px puzzle
+// make 120px/pc for 5x5 600px puzzle
 //attach divs to container
 
 //container = flexbox
-
-//need to reorganize puzzles to be in order
-//attach coordinates to each pc?
 
 var createBoard = function() {
   var counter = 0;
@@ -33,8 +28,6 @@ var createBoard = function() {
 
   for (var i = 0; i < 5; i++) {
     grid[i] = []
-    //new $('<div class"row">')
-    // var newRow = $('<div class="row"></div>');
     for (var j = 0; j < 5; j++) {
       var block = $('<div class="puzzle"></div>');
       block.attr('id', 'piece' + counter)

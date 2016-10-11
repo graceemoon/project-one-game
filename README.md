@@ -1,19 +1,6 @@
 # project-one-game
 
-                                .::.                          
-                              .;:**'            AMC           
-                              `                  0            
-  .:XHHHHk.              db.   .;;.     dH  MX   0            
-oMMMMMMMMMMM       ~MM  dMMP :MMMMMR   MMM  MR      ~MRMN     
-QMMMMMb  "MMX       MMMMMMP !MX' :M~   MMM MMM  .oo. XMMM 'MMM
-  `MMMM.  )M> :X!Hk. MMMM   XMM.o"  .  MMMMMMM X?XMMM MMM>!MMP
-   'MMMb.dM! XM M'?M MMMMMX.`MMMMMMMM~ MM MMM XM `" MX MMXXMM 
-    ~MMMMM~ XMM. .XM XM`"MMMb.~*?**~ .MMX M t MMbooMM XMMMMMP 
-     ?MMM>  YMMMMMM! MM   `?MMRb.    `"""   !L"MMMMM XM IMMM  
-      MMMX   "MMMM"  MM       ~%:           !Mh.""" dMI IMMP  
-      'MMM.                                             IMX   
-       ~M!M                                             IMP   
-
+![](img/Flying_Pikachu_Dash.png)
 Pokemon Puzzle Game
 
 DIRECTIONS
@@ -22,6 +9,24 @@ DIRECTIONS
 2. Puzzle will appear - 
 3. Swap puzzle pieces by clicking 2 puzzle pieces
 4. If you place all the pieces to correct location, you win
+
+
+
+![](img/game_page.png)
+Above - game page for the Pokemon puzzle
+
+![](img/ref-landing_page.png)
+Above - reference landing page
+
+![](img/landing_page.png)
+Above - landing page created with layout of reference page
+
+![](img/struggles.png)
+Above - the first portion of code I had trouble with, to create the 
+puzzle board with coordinates for all the puzzle pieces. Working with 
+nested for loops.
+
+
 
 Credits:
 
